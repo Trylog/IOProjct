@@ -1,64 +1,31 @@
-public class Product {
+package sklep;
 
+public class Product {
 	private String Name;
 	private float Price;
 	private VATBracket VAT;
 	private int ProductID;
 
-	public void getName() {
-		// TODO - implement Product.getName
-		throw new UnsupportedOperationException();
+	Product(String Name, float Price, VATBracket VAT, int ProductID){
+		this.Name=Name;
+		this.Price=Price;
+		this.VAT=VAT;
+		this.ProductID=ProductID;
 	}
 
-	/**
-	 * 
-	 * @param Name
-	 */
-	public void setName(int Name) {
-		// TODO - implement Product.setName
-		throw new UnsupportedOperationException();
+	public String getName() {
+		return Name;
 	}
 
 	public float getPrice() {
-		// TODO - implement Product.getPrice
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * 
-	 * @param Price
-	 */
-	public void setPrice(int Price) {
-		// TODO - implement Product.setPrice
-		throw new UnsupportedOperationException();
+		return Price;
 	}
 
 	public VATBracket getVAT() {
-		// TODO - implement Product.getVAT
-		throw new UnsupportedOperationException();
+		return VAT;
 	}
 
-	/**
-	 * 
-	 * @param VAT
-	 */
-	public void setVAT(int VAT) {
-		// TODO - implement Product.setVAT
-		throw new UnsupportedOperationException();
+	public int getProductID() {
+		return ProductID;
 	}
-
-	public void getProductID() {
-		// TODO - implement Product.getProductID
-		throw new UnsupportedOperationException();
-	}
-
-	/**
-	 * 
-	 * @param ProductID
-	 */
-	public void setProductID(int ProductID) {
-		// TODO - implement Product.setProductID
-		throw new UnsupportedOperationException();
-	}
-
 }

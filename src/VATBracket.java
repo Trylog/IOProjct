@@ -1,12 +1,12 @@
+package sklep;
+
 public enum VATBracket {
-	A(0.23f),
-	B(0.08f),
-	C(0.05f),
-	D(0.0f);
+	A(23),
+	B(8),
+	C(5),
+	D(0);
 
-	public final float value;
-
-	private VATBracket(float label) {
-		this.value = label;
-	}
+	public final int value;
+	private VATBracket(int label) {this.value = label;}
 }
+

@@ -1,16 +1,22 @@
+package sklep;
+
 public class PrintingPosition {
 
-	protected Product Product;
-	protected int Quantity;
+	private Product Product;
+	private int Quantity;
 
-	/**
-	 * 
-	 * @param product
-	 * @param quantity
-	 */
 	public PrintingPosition(Product product, int quantity) {
-		// TODO - implement PrintingPosition.PrintingPosition
-		throw new UnsupportedOperationException();
-	}
 
+		Product=product;
+		Quantity=quantity;
+	}
+	public Product getProduct(){
+		return Product;
+	}
+	public int getQuantity(){
+		return Quantity;
+	}
+	public void setQuantity(int quantity){
+		Quantity=quantity;
+	}
 }

@@ -1,20 +1,17 @@
+package sklep;
+
+import sklep.PrintingPosition;
+
 public class InternalPosition extends PrintingPosition {
 
-	/**
-	 * @param product
-	 * @param quantity
-	 */
 	public InternalPosition(Product product, int quantity) {
 		super(product, quantity);
 	}
 
-	/**
-	 * 
-	 * @param quantity
-	 */
 	public void increment(int quantity) {
-		// TODO - implement InternalPosition.increment
-		throw new UnsupportedOperationException();
+		this.setQuantity(this.getQuantity()+quantity);
 	}
-
+	public void decrement(int quantity) {
+		this.setQuantity(this.getQuantity()-quantity);
+	}
 }
